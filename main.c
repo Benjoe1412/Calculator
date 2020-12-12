@@ -13,7 +13,7 @@ int main()
 {
     char buf[120];
     state = LEFT;
-   fgets(buf, 120,stdin);
+    fgets(buf, 120,stdin);
 
     printf("Hello world!\n");
     return 0;
@@ -32,6 +32,7 @@ void digit(int n){
 
 }
 void plus(){
+    //replace with switchcase
     if(state == LEFT){
         memory = input;
     }else{
@@ -50,6 +51,7 @@ void plus(){
 
 }
 void times(){
+    //replace with switchcase same as plus
     if(state == LEFT){
         memory = input;
     }else{
